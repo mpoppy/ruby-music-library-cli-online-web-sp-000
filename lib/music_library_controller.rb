@@ -37,10 +37,10 @@ class MusicLibraryController
 
   def list_songs
     counter = 0
-      @path.each do |p|
-        p.glob("*.mp3")
+      @path.each do |pa|
+        pa.glob("*.mp3")
       counter += 1
-      puts "#{counter}. #{p}"
+      puts "#{counter}. #{pa}"
       end
   end
 
