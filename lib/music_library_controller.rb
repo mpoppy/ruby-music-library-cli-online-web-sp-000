@@ -39,7 +39,7 @@ class MusicLibraryController
     counter = 0
     Song.all.each do |song|
       counter += 1
-      puts "#{counter}. #{song.name}""
+      puts "#{counter}. #{song.name}"
     end
   end
 
