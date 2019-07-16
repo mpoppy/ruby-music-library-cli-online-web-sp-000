@@ -1,6 +1,6 @@
 
 class MusicLibraryController
-  extend Concerns::Findable
+  # extend Concerns::Findable
 
   attr_accessor :path
 
