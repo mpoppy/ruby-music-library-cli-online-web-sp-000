@@ -36,8 +36,10 @@ class MusicLibraryController
   end
 
   def list_songs
+    counter = 0
     Song.all.each do |song|
-      puts song.name
+      counter += 1
+      puts "#{counter}. song.name
     end
   end
 
