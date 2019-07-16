@@ -20,7 +20,7 @@ class Song
 
   def self.new_from_filename(filename)
     new_artist, new_song, new_genre = filename.split(" - ")
-    new_genre = genre.chomp(".mp3")
+    genre = new_genre.chomp(".mp3")
     artist = Artist.find_or_create_by_name(new_artist)
     genre = Genre.find_or_create_by_name(new_genre)
 
