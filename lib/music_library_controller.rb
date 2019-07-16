@@ -85,5 +85,5 @@ class MusicLibraryController
     #iterate over Song.all and find and take input -1
     song = Song.all.map{|s| s.name[input = 1]}
     binding.pry
-
+  end
 end
