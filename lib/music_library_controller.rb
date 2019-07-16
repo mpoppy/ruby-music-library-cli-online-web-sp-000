@@ -79,13 +79,6 @@ class MusicLibraryController
     end
   end
 
-  # def play_song
-  #   puts "Which song number would you like to play?"
-  #   input = gets.strip.to_i
-  #   #iterate over Song.all and find and take input -1
-  #   song = Song.all.find{|s| s.name}[input - 1]
-  #   binding.pry
-  # end
 
   def play_song
   puts "Which song number would you like to play?"
