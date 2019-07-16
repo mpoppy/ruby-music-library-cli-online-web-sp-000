@@ -62,7 +62,7 @@ class MusicLibraryController
     puts "Please enter the name of an artist:"
     artist_input = gets.chomp
     artist_object = Artist.find_by_name(artist_input)
-      artist_object.all.each do |song|
+      artist_object.songs.each do |song|
         puts "#{song}"
       end
   end
