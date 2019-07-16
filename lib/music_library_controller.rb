@@ -1,7 +1,5 @@
 
 class MusicLibraryController
-  # extend Concerns::Findable
-
   attr_accessor :path
 
   def initialize(path = './db/mp3s')
