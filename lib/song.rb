@@ -28,7 +28,6 @@ class Song
 
   def self.create_from_filename(filename)
     new_from_filename(filename)
-
   end
 
   def artist=(artist)
