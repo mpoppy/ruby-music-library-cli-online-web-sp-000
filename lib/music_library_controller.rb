@@ -80,7 +80,7 @@ class MusicLibraryController
     if genre != nil
       genre.songs.sort{|a,b| a.name <=> b.name}.each do |song|
         counter += 1
-        puts "#{counter}. #{song.genre.name} - #{song.artist.name}"
+        puts "#{counter}. #{song.artist.name} - #{song.name}"
       end
     end
   end
