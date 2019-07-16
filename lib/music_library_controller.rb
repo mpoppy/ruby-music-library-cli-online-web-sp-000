@@ -40,7 +40,7 @@ class MusicLibraryController
       path.each do |file|
       counter += 1
       puts "#{counter}. #{file}"
-    end
+      end
   end
 
   def list_artists
