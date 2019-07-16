@@ -5,6 +5,6 @@ class MusicLibraryController
 
   def initialize(path = nil)
     self.path = path if path
-    MusicImporter.new(path)
+    MusicImporter.new(path = './db/mp3s')
   end
 end
