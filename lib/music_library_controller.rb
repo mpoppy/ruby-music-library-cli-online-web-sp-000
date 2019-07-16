@@ -37,7 +37,7 @@ class MusicLibraryController
 
   def list_songs
     Song.all.each do |song|
-      puts song
+      puts song.name
     end
   end
 
