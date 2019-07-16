@@ -37,10 +37,9 @@ class MusicLibraryController
 
   def list_songs
     counter = 0
-      self.path.each do |pa|
-      name = pa.chomp("*.mp3")
-      counter += 1
-      puts "#{counter}. #{name}"
+      Song.all.each do |song|
+        counter += 1
+        puts "#{counter}. #{song}"
       end
   end
 
