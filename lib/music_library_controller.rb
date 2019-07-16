@@ -90,7 +90,7 @@ class MusicLibraryController
 
   def play_song
     puts "Which song number would you like to play?"
-    input = gets.strip_to_i
+    input = gets.strip.to_i
     list_songs.detect do |song|
       song.counter = input
       prints song.counter
