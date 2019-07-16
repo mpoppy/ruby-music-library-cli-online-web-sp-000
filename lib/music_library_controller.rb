@@ -23,10 +23,15 @@ class MusicLibraryController
       input = gets.chomp
       if input == "list songs"
         list_songs
-      elsif input == "list artist"
+      elsif input == "list artists"
         list_artists
       elsif input == "list genres"
         list_genres
+      elsif input == "list artist"
+        list_songs_by_artist
+      elsif input == "list genre"
+        list_songs_by_genre
+
     end
   end
 
