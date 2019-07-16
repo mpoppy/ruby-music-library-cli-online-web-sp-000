@@ -39,6 +39,7 @@ class MusicLibraryController
   def list_songs
       Song.all.sort{ |a, b| a.name <=> b.name}.each.with_index(1) do |song, index|
         puts "#{index}. #{song.artist.name} - #{song.name} - #{song.genre.name}"
+        
       end
   end
 
@@ -78,9 +79,6 @@ class MusicLibraryController
   def play_song
     puts "Which song number would you like to play?"
     input = gets.strip.to_i
-    song_list = list_songs
-    song_list.map.with_index {|song, index| song[index] = input}
-    #iterate over song_list and grab song that has index
 
   end
 
