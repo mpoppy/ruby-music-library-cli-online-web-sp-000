@@ -79,7 +79,7 @@ class MusicLibraryController
     puts "Which song number would you like to play?"
     input = gets.strip.to_i
     song_list = list_songs
-    song_list.each_with_index {|song, index| song[index] == input}
+    song_list.map_with_index {|song, index| song[index] == input}
     #iterate over song_list and grab song that has index
 
   end
