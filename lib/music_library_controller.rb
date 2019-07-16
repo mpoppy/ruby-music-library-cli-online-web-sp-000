@@ -1,6 +1,6 @@
 
 class MusicLibraryController
   def initialize(path = nil)
-    @path = path
+    self.path = path if path
   end
 end
