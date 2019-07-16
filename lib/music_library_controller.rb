@@ -40,7 +40,7 @@ class MusicLibraryController
       Song.all.sort do |a, b|
         a <=> b
         counter += 1
-        puts "#{counter}. #{song.artist.name} - #{song.name} - #{song.genre.name}"
+        puts "#{counter}. #{a.artist.name} - #{a.name} - #{a.genre.name}"
       end
   end
 
