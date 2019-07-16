@@ -39,7 +39,7 @@ class MusicLibraryController
     counter = 0
     files.each do |file|
       counter += 1
-      puts "#{counter}. #{song.name}"
+      puts "#{counter}. #{file}"
     end
   end
 
