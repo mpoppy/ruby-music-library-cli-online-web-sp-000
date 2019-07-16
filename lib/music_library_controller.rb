@@ -79,7 +79,7 @@ class MusicLibraryController
     puts "Which song number would you like to play?"
     input = gets.strip.to_i
     song_list = list_songs
-    puts song_list[input]
+    song_list.select{|song| song[input]}
     # list_songs.detect{|song, index| song[index] = input puts song}
 
   end
