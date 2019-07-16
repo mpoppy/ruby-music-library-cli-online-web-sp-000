@@ -1,3 +1,4 @@
+require_relative "../lib/concerns/findable.rb"
 
 #create Song class, instatiate with a name
 class Song
