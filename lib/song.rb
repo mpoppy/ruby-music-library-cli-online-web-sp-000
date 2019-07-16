@@ -23,6 +23,8 @@ class Song
     new_genre = genre.chomp(".mp3")
     artist = Artist.find_or_create_by_name(new_artist)
     genre = Genre.find_or_create_by_name(new_genre)
+
+    new(new_song, artist, genre)
   end
 
   def artist=(artist)
