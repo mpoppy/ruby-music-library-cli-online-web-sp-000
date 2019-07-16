@@ -44,6 +44,7 @@ class MusicLibraryController
         counter += 1
         song_list =  "#{counter}. #{song.artist.name} - #{song.name} - #{song.genre.name}"
         puts song_list
+        song_list
       end
   end
 
