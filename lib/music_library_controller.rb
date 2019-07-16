@@ -38,4 +38,17 @@ class MusicLibraryController
 
   end
 
+  def list_artists
+
+  end
+  def list_genres
+
+  end
+  def list_songs_by_artist
+
+  end
+  def list_songs_by_genre
+
+  end
+
 end
