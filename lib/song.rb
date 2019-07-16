@@ -22,7 +22,7 @@ class Song
     artist, song, genre = filename.split(" - ")
     new_genre = genre.chomp(".mp3")
     new_song = self.create(song)
-    new_song.artist = artist
+    new_song.artist = self.create(artist)
     new_song.genre = new_genre
     new_song
   end
