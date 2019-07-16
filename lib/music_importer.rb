@@ -13,6 +13,6 @@ class MusicImporter
     end
   end
   def import
-
+    @files.each{|file| }
   end
 end
