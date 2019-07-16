@@ -50,6 +50,7 @@ class MusicLibraryController
         puts "#{counter}. #{artist.artist.name} - #{artist.name} - #{artist.genre.name}"
       end
   end
+  
   def list_genres
 
   end
