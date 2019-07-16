@@ -40,7 +40,7 @@ class MusicLibraryController
       @path.each do |p|
         p.glob("*.mp3")
       counter += 1
-      puts "#{counter}. #{path}"
+      puts "#{counter}. #{p}"
       end
   end
 
